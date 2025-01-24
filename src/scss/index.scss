@@ -1,0 +1,17 @@
+@use'./var.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: var(--primary-font) !important; 
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    background:white !important;
+   
+  }
