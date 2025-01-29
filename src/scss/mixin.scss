@@ -1,9 +1,20 @@
-@mixin button-style {
-    border-radius: 20px;
-    background: #E16452;
-    padding: 10px;
-    width: auto;
-    min-width: 100px;
-    height: auto;
-    border-color: #E16452;
+@mixin button-style($size, $weight) {
+    border-radius: 6px;
+    background: var(--third-font-color);
+    padding: 10px 13px;
+    // min-width: 100px;
+    color: var( --secondary-bg-color);
+    font-size: $size ;
+    font-weight: $weight ;
+    flex-shrink: 0;
+    border-color: var(--third-font-color);
   }
+
+  @mixin text-style(){
+    color: var(--primary-font-color);
+font-family: var(--second-font);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

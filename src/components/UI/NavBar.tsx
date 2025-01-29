@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import { BrandLogo } from "@/mock";
 
 
 const NavBar = () => {
     return(
-        <nav>
+        <nav className="nav-container">
             <div>
-                Logo
+             <img src={BrandLogo} alt="VOGA" />
             </div>
-            <ul>
+            <ul className="nav-left">
                 <li>
                     <Link to='/'>
                        Home

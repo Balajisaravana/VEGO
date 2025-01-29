@@ -1,0 +1,21 @@
+.hero-container{
+    background: linear-gradient(103deg, #2C3333 41.38%, #7E8E8E 100.13%);
+    .float-container{
+        display: inline-flex;
+            flex-direction: row;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            gap: 20px;
+            position: absolute;
+    }
+    .sub-para{
+        color: #FCFAEE;
+        text-align: justify;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
