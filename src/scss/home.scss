@@ -1,4 +1,25 @@
 @use'./components/navbar';
 @use'../scss/layout/heroBanner';
 @use'../scss/components/rightBanner';
-@use'../scss/components/imageBlock'
+@use'../scss/components/imageBlock';
+
+.home-main{
+
+    .home-services{
+        width: 100%;
+        min-height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        
+        >h2{
+            
+            color: #2C3333;
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+    }
+}

@@ -16,9 +16,9 @@ const HomePage = () => {
     <NavBar></NavBar>
   
     </header>
-    <main>
+    <main className="home-main">
     <HeroBanner></HeroBanner>
-    <section>
+    <section className="home-services">
         <h2>Services</h2>
         {servicesData.map((data,index)=> 
         <ImageBlock title={data.title} text={data.para} index={index}/>

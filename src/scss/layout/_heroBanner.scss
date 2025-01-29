@@ -1,13 +1,19 @@
 .hero-container{
     background: linear-gradient(103deg, #2C3333 41.38%, #7E8E8E 100.13%);
+    position: relative;
+    height: 65vh;
     .float-container{
         display: inline-flex;
             flex-direction: row;
-            grid-template-columns: 1fr 1fr 1fr;
             align-items: center;
             justify-items: center;
             gap: 20px;
             position: absolute;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: translate(-50%, -50%);
+            top: 100%;
+            left: 50%;
     }
     .sub-para{
         color: #FCFAEE;

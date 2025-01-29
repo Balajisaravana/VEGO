@@ -17,7 +17,7 @@ const HeroBanner  = () => {
          </RightBanner>
          <aside className="float-container">
          {boxData.map((data,key)=>
-                <ImageBlock title={data.title} text={data.para} icon={data.icon} index={key} />
+                <ImageBlock title={data.title} text={data.para} icon={data.icon} index={key} className="_hero"/>
           )}
          </aside>
        
