@@ -3,6 +3,7 @@ import brandIcon from '../assets/brand-centric.svg';
 import resultIcon from '../assets/result.svg'
 import hero from '@/assets/home_banner.svg'
 import logo from '../assets/brand-logo.svg'
+import dot from '../assets/dot-logo.svg';
 
 export const homeImages = {
     dataIcon,
@@ -11,3 +12,4 @@ export const homeImages = {
 }
 export const  heroBanner = hero;
 export const BrandLogo = logo;
+export const dotList = dot

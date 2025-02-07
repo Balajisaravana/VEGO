@@ -7,6 +7,7 @@ import RightBanner from "@/components/UI/RightBanner";
 import { servicesData  } from "@/mock/home_content";
 import banner from '../../assets/home_banner.svg'
 import Footer from "@/components/layouts/Footer";
+import { dotList } from "@/mock";
 
 
 const HomePage = () => {
@@ -20,17 +21,23 @@ const HomePage = () => {
     <HeroBanner></HeroBanner>
     <section className="home-services">
         <h2>Services</h2>
+        <div className="services-body">
         {servicesData.map((data,index)=> 
-        <ImageBlock title={data.title} text={data.para} index={index}/>
+        <ImageBlock title={data.title} text={data.para} index={index} className="_service"/>
         )}
-        <WeHelpLayout/>
+        </div>
+       
+   
 
     </section>
-    <section>
-        <h2>What if we don’t keep up our promise?</h2>
+    <section className="home-help">
+    <WeHelpLayout/>
+    </section>
+    <section className="home-promises">
+        <h2 >What if we don’t keep up our promise?</h2>
         <ul>
-            <li>Within a month we guarantee you to increase your sales by 10x and  creating an army of high quality audience who would be willing to buy any new product / service you offer.</li>
-            <li>If we fail to do , we will refund your money fully and work with you free for next 30 days to achieve your desired result.</li>
+            <li> <img src={dotList}/> Within a month we guarantee you to increase your sales by 10x and  creating an army of high quality audience who would be willing to buy any new product / service you offer.</li>
+            <li> <img src={dotList}/> If we fail to do , we will refund your money fully and work with you free for next 30 days to achieve your desired result.</li>
         </ul>
         <span>"Ready to explode your brand’s social media growth in 30 days?” Click below to book your free strategy session and reserve your spot in our limited Sales Accelerator program!</span>
             <Button>Let's Work Together</Button>

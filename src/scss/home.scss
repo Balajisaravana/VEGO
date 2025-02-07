@@ -2,24 +2,86 @@
 @use'../scss/layout/heroBanner';
 @use'../scss/components/rightBanner';
 @use'../scss/components/imageBlock';
-
+@use'../scss/mixin.scss';
+@use'../scss//layout/weHelp';
 .home-main{
 
     .home-services{
+
         width: 100%;
         min-height: 65vh;
         display: flex;
         flex-direction: column;
-        justify-content:center ;
+        justify-content:end ;
+
+        opacity: 1.15;
+        background: url('../assets/path-bg-service.svg') #FCFAEE 50% / cover no-repeat;
         
         >h2{
-            
+            margin-bottom: 50px;
             color: #2C3333;
             font-size: 55px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            text-align: center;
+        }
+        .services-body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
         }
 
+    }
+
+    .home-help{
+        width: 100%;
+        min-height: 65vh;
+        opacity: 1.15;
+        background: url('../assets/home-spider.svg') #FCFAEE 50% / cover no-repeat;
+    }
+
+    .home-promises{
+        width: 100%;
+        min-height: 65vh;
+        background: linear-gradient(96deg, #2C3333 28.49%, #778989 128.93%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        h2{
+            @include mixin.headerText();
+            width: 1304px;
+            text-align: center;
+        }
+        ul {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                width: 50%;
+                align-items: center;
+               
+            
+            li{
+                @include mixin.innerText();
+                width: 80%;
+                text-align: left;
+              
+             img {
+                margin-right: 30px;
+             }  
+            }
+        } 
+        span{
+            color: #CBE4DE;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 40%;
+        }
     }
 }

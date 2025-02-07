@@ -18,3 +18,29 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
+@mixin imageFlex() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin headerText(){
+  color: #CBE4DE;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+@mixin innerText(){
+  color: #CBE4DE;
+font-family: Montserrat;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+list-style: none;
+}
