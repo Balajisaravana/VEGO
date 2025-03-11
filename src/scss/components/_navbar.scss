@@ -1,24 +1,74 @@
 @use '../mixin.scss';
-.nav-container {
-       
-        display: grid;
+
+@mixin nav-container(){
+    display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    padding: 25px 130px;
+    // padding: 25px 130px;
+    padding: clamp(10px, 5vw,50px) clamp(5px, 5vw, 130px);
+}
+.nav-container {
+    &_home {
+    @include nav-container();
     background: linear-gradient(105deg, #2C3333 34.2%, #2E3535 59.7%, #7E8E8E 113.42%);
 }
+&_service {
+    @include nav-container();
+    background: #FCFAEE;
+}
 
+}
+
+.nav-logo{
+    
+ 
+    
+    &_home{
+        color:#CBE4DE;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: italic;
+        font-weight: 900;
+        line-height: normal;
+    }
+    &_service{
+        color: #2C3333;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: italic;
+        font-weight: 900;
+        line-height: normal;
+    }
+    }
 .nav-left {
+   
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    li {
-        a{
-            @include mixin.text-style();
-            text-decoration: none;
-            
+  
+    &_home{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        li {
+            a{
+                @include mixin.text-style(#CBE4DE);
+                text-decoration: none;
+                
+            }
+        }
+    }
+    &_service{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+       
+        li {
+            a{
+                @include mixin.text-style(#2C3333);
+                text-decoration: none;
+                
+            }
         }
     }
 }

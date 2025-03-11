@@ -1,10 +1,13 @@
 @use'./var.scss';
 @use'./home.scss';
+@use'./About.scss';
+@use'./services.scss';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   body {
     font-family: var(--primary-font) !important; 
@@ -15,4 +18,9 @@
     box-sizing: border-box;
     background:white !important;
    
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
   }

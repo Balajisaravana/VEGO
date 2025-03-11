@@ -4,18 +4,25 @@
 @use'../scss/components/imageBlock';
 @use'../scss/mixin.scss';
 @use'../scss//layout/weHelp';
+@use'../scss/layout/footer';
+@use'./breakPoint.scss';
 .home-main{
-
+   
     .home-services{
 
         width: 100%;
-        min-height: 65vh;
+        min-height: 100vh;
+        height: auto;
+        max-height: max-content;
         display: flex;
         flex-direction: column;
         justify-content:end ;
 
         opacity: 1.15;
         background: url('../assets/path-bg-service.svg') #FCFAEE 50% / cover no-repeat;
+        @include breakPoint.between(300px,890px){
+            min-height: 70vh;
+            }
         
         >h2{
             margin-bottom: 50px;
@@ -37,9 +44,10 @@
 
     .home-help{
         width: 100%;
-        min-height: 65vh;
+        min-height:70vh;
         opacity: 1.15;
         background: url('../assets/home-spider.svg') #FCFAEE 50% / cover no-repeat;
+        padding: 70px 0px;
     }
 
     .home-promises{
@@ -52,7 +60,7 @@
         justify-content: space-evenly;
         h2{
             @include mixin.headerText();
-            width: 1304px;
+            width: 100%;
             text-align: center;
         }
         ul {
@@ -61,13 +69,21 @@
                 gap: 50px;
                 width: 50%;
                 align-items: center;
+                list-style: none;
                
             
             li{
+                display: flex;
+                column-gap: 20px;
+                align-items: baseline;
+                justify-content: center;
+
+                span{
                 @include mixin.innerText();
                 width: 80%;
                 text-align: left;
-              
+                
+                }
              img {
                 margin-right: 30px;
              }  
@@ -83,5 +99,25 @@
             line-height: normal;
             width: 40%;
         }
+
+    }
+    .home-transfrom{
+        background: #FCFAEE;
+box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #2C3333;
+font-family: Montserrat;
+font-size: 52px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+
+p{
+    color: #2C3333;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 133.333% */
+}
     }
 }

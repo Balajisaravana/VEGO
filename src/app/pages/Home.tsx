@@ -14,7 +14,7 @@ const HomePage = () => {
     return (
         <>
     <header>
-    <NavBar></NavBar>
+    <NavBar className="_home"></NavBar>
   
     </header>
     <main className="home-main">
@@ -36,13 +36,13 @@ const HomePage = () => {
     <section className="home-promises">
         <h2 >What if we don’t keep up our promise?</h2>
         <ul>
-            <li> <img src={dotList}/> Within a month we guarantee you to increase your sales by 10x and  creating an army of high quality audience who would be willing to buy any new product / service you offer.</li>
-            <li> <img src={dotList}/> If we fail to do , we will refund your money fully and work with you free for next 30 days to achieve your desired result.</li>
+            <li> <img src={dotList}/> <span> Within a month we guarantee you to increase your sales by 10x and  creating an army of high quality audience who would be willing to buy any new product / service you offer.</span> </li>
+            <li> <img src={dotList}/><span>If we fail to do , we will refund your money fully and work with you free for next 30 days to achieve your desired result. </span></li>
         </ul>
         <span>"Ready to explode your brand’s social media growth in 30 days?” Click below to book your free strategy session and reserve your spot in our limited Sales Accelerator program!</span>
             <Button>Let's Work Together</Button>
     </section>
-    <section>
+    <section className="home-transfrom">
         <RightBanner HeaderText="How It Transforms the Brand:" imageRight={banner}  altText="Banner Image" isButton={false}>
             <p>
             We invite your customers to share their experiences through user-generated content (UGC) and a structured brand ambassador program. By reposting photos, videos, and testimonials, we celebrate the community and turn customers into brand storytellers.

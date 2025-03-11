@@ -1,7 +1,13 @@
+@use'../breakPoint.scss';
 .hero-container{
     background: linear-gradient(103deg, #2C3333 41.38%, #7E8E8E 100.13%);
     position: relative;
-    height: 65vh;
+    min-height: 100vh;
+    overflow: visible;
+    @include breakPoint.between(300px,890px){
+    display: flex;
+    flex-direction: column;
+    }
     .float-container{
         display: inline-flex;
             flex-direction: row;
@@ -9,11 +15,23 @@
             justify-items: center;
             gap: 20px;
             position: absolute;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
             transform: translate(-50%, -50%);
             top: 100%;
             left: 50%;
+            padding: 10px;
+            @include breakPoint.between(300px,890px){
+                display: inline-flex;
+                flex-direction: column;
+                padding: 10px;
+                align-items: center;
+                justify-items: center;   
+                 gap: 20px;
+                 background: url('../assets/path-bg-service.svg') #FCFAEE 50% / cover no-repeat;
+                 position: relative;
+                 transform: none;
+                 left: 0px;
+             }
     }
     .sub-para{
         color: #FCFAEE;

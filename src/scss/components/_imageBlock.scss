@@ -1,3 +1,7 @@
+$radiusX: 650px; // X-axis radius of ellipse
+$radiusY: 600px; // Y-axis radius of ellipse
+$total: 5;
+
 @mixin imageFlex () {
     display: flex;
     flex-direction: column;
@@ -9,11 +13,20 @@
     &_hero {
         @include imageFlex();
         padding: 20px;
-        width: 339px;
-        height: 349px;
+        width: clamp(200px, 50vw, 340px);
+        height: clamp(250px, 50vh, 350px);
+        // width: 339px;
+        // height: 349px;
+        // width: auto;
+        // height: auto;
+        // min-width: 300px;
+        // min-height: 290px;
+        // max-height: 350px;
+        // max-width: 340px;
         justify-content: space-evenly;
         border-radius: 10px;
         background: #FCFAEE;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
         h2 {
             color: #2C3333;
@@ -70,6 +83,27 @@ border-radius: 15px;
 background: #FCFAEE;
 box-shadow: 0px 0px 20.6px 0px rgba(0, 0, 0, 0.25);
 padding: 20px;
+display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        
+// position: absolute;
+// @for $i from 1 through $total {
+//     $angle: ($i - 1) * calc(360deg / $total); // Spread evenly in ellipse
+//     $rad: $angle * calc(3.14159265359 / 180); // Convert degrees to radians
+//     $x: cos($rad) * $radiusX; // Calculate X position
+//     $y: sin($rad) * $radiusY; // Calculate Y position
+    
+//     &:nth-child(#{$i}) {
+//         transform: translate($x, $y);
+    // }
+// }
 
 
 p{

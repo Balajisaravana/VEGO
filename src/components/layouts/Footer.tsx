@@ -1,9 +1,9 @@
 import { BrandLogo } from "@/mock/index"
  const Footer = () => {
     return (
-        <footer>
-            <img src={BrandLogo}></img>
-            <span>Result Oriented Branding Agency that transforms your brand an experience with high ROI </span>
+        <footer className="footer-container">
+            <img src={BrandLogo} width={"250px"}></img>
+            <span className="footer-side">Result Oriented Branding Agency that transforms your brand an experience with high ROI </span>
 
             <aside>
             <h3>Have A General Inquiry?</h3>

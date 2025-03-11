@@ -1,0 +1,116 @@
+.services-main{
+    background: #FCFAEE;
+    .services-first {
+            width: 100%;
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3vh;
+    
+            .main-header {
+                color: #2C3333;
+                font-family: Montserrat;
+                font-size: 64px;
+                font-style: italic;
+                font-weight: 900;
+                line-height: normal;
+            }
+    
+            .main-subheader {
+                color: #2C3333;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+    
+            .main-para {
+                color: #2C3333;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+    }
+
+    .service-second{
+        .service-ul{
+            color: #2C3333;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 150% */
+        }
+        .service-list{
+            margin: 0px 40px;
+            list-style: none;
+        }
+        .service-span{
+            margin-top: 18px;
+            color: #2C3333;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; 
+        }
+    }
+
+    .service-third{
+        display: flex;
+            flex-direction: row;
+            align-items: center;
+            .third-container{
+               .third-title{
+                
+                 color: #2C3333;
+                font-family: Montserrat;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 44px; 
+                
+               }
+               .third-span{
+                font-weight: 600;
+               }
+               .third-para{
+                color: #2C3333;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; 
+               }
+            }
+    }
+    .service-forth{
+        .service-ul{
+            color: #2C3333;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 150% */
+        }
+        .service-list{
+            margin: 0px 40px;
+            list-style: none;
+        }
+        .service-span{
+            margin-top: 18px;
+            color: #2C3333;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; 
+        }
+    }
+}

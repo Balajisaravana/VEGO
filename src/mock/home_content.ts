@@ -53,11 +53,11 @@ export const weHelpData = [
     },
     {
         para : 'We increase your sales by 10x with higher RO'
+    },
+    {
+        para : 'We increase your sales by 10x with higher RO'
     }
+
 
 ]
 
-// export const HowTransformData = {
-//     title : '',
-//     para : ''
-// }

@@ -10,8 +10,8 @@
     border-color: var(--third-font-color);
   }
 
-  @mixin text-style(){
-    color: var(--primary-font-color);
+  @mixin text-style($color){
+    color:$color ;
 font-family: var(--second-font);
 font-size: 20px;
 font-style: normal;
@@ -28,7 +28,7 @@ line-height: normal;
 @mixin headerText(){
   color: #CBE4DE;
   font-family: Montserrat;
-  font-size: 60px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

@@ -3,14 +3,17 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import { BrandLogo } from "@/mock";
 
-
-const NavBar = () => {
+type CustomeNav = {
+    className ?: string
+}
+const NavBar:  React.FC<CustomeNav> = ({className}) => {
     return(
-        <nav className="nav-container">
+        <nav className={"nav-container" + className}>
             <div>
-             <img src={BrandLogo} alt="VOGA" />
+             {/* <img src={BrandLogo}  alt="VOGA" /> */}
+             <h2 className={"nav-logo"+ className}>VOGA</h2>
             </div>
-            <ul className="nav-left">
+            <ul className={"nav-left"+ className}>
                 <li>
                     <Link to='/'>
                        Home
