@@ -95,8 +95,11 @@ $total: 5;
     }
 
     &_help{
-        width: 315px;
-        height: 200px;
+        // width: 315px;
+        // height: 200px;
+        width: clamp(250px,30vw,300px);
+        height: clamp(200px,20vh,250px);
+        
 border-radius: 15px;
 background: #FCFAEE;
 box-shadow: 0px 0px 20.6px 0px rgba(0, 0, 0, 0.25);

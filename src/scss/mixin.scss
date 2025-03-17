@@ -25,20 +25,20 @@ line-height: normal;
   align-items: center;
 }
 
-@mixin headerText(){
+@mixin headerText($headerSize){
   color: #CBE4DE;
   font-family: Montserrat;
-  font-size: 80px;
+  font-size: $headerSize;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 
 }
 
-@mixin innerText(){
+@mixin innerText($size){
   color: #CBE4DE;
 font-family: Montserrat;
-font-size: 28px;
+font-size: $size;
 font-style: normal;
 font-weight: 400;
 line-height: normal;

@@ -48,7 +48,7 @@
 
     .home-help{
         width: 100%;
-        min-height:70vh;
+        min-height:100vh;
         opacity: 1.15;
         background: url('../assets/home-spider.svg') #FCFAEE 50% / cover no-repeat;
         padding: 70px 0px;
@@ -56,14 +56,14 @@
 
     .home-promises{
         width: 100%;
-        min-height: 65vh;
+        min-height: 100vh;
         background: linear-gradient(96deg, #2C3333 28.49%, #778989 128.93%);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         h2{
-            @include mixin.headerText();
+            @include mixin.headerText(3.5rem);
             width: 100%;
             text-align: center;
         }
@@ -71,19 +71,20 @@
                 display: flex;
                 flex-direction: column;
                 gap: 50px;
-                width: 50%;
+                width: 80%;
                 align-items: center;
                 list-style: none;
+                // width: auto;
                
             
             li{
                 display: flex;
-                column-gap: 20px;
+                // column-gap: 20px;
                 align-items: baseline;
                 justify-content: center;
 
                 span{
-                @include mixin.innerText();
+                @include mixin.innerText(1.5rem);
                 width: 80%;
                 text-align: left;
                 
@@ -101,7 +102,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
-            width: 40%;
+            width: 60%;
         }
 
     }
