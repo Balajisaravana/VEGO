@@ -17,13 +17,16 @@
         display: flex;
         flex-direction: column;
         justify-content:end ;
+      
 
         opacity: 1.15;
         background: url('../assets/path-bg-service.svg') #FCFAEE 50% / cover no-repeat;
         @include breakPoint.between(300px,890px){
             min-height: 70vh;
             }
-        
+        @include breakPoint.between(891px,1300px){
+            min-height: 160vh;
+        }
         >h2{
             margin-bottom: 50px;
             color: #2C3333;
@@ -38,6 +41,7 @@
             align-items: center;
             justify-content: center;
             gap: 50px;
+            flex-wrap: wrap;
         }
 
     }

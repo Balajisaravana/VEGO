@@ -1,3 +1,4 @@
+@use'../breakPoint.scss';
 $radiusX: 650px; // X-axis radius of ellipse
 $radiusY: 600px; // Y-axis radius of ellipse
 $total: 5;
@@ -13,7 +14,7 @@ $total: 5;
     &_hero {
         @include imageFlex();
         padding: 20px;
-        width: clamp(200px, 50vw, 340px);
+        width: clamp(300px, 50vw, 340px);
         height: clamp(250px, 50vh, 350px);
         // width: 339px;
         // height: 349px;
@@ -41,29 +42,41 @@ $total: 5;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
+            text-align: center;
             line-height: normal;
         }
     }
 
     &_service{
         @include imageFlex();
-        width: 412px;
-        height: 479px;
+        // width: 412px;
+        // height: 479px;
         border-radius: 25px;
         background: linear-gradient(152deg, #2C3333 40.06%, #849999 102.81%);
         box-shadow: 0px 6px 12px 5px rgba(0, 0, 0, 0.25);
         padding: 20px;
         text-align: center;
         justify-content: space-evenly;
+        width: clamp(300px,50vw,400px);
+        height: clamp(350px, 50vh, 450px);
+        // max-width: 400px;
+        // min-width: 200px;
+        // width: auto;
+
 
 
     h2{
         color: #E16452;
         font-family: Montserrat;
         font-size: 36px;
+        // font-size: clamp(1.5rem, 2vw, 2rem);
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+    
+        @include breakPoint.between(300px,700px){
+            font-size: 1.6rem;
+        }
     }
     p{
         color: #CBE4DE;
@@ -72,6 +85,11 @@ $total: 5;
         font-style: normal;
         font-weight: 500;
         line-height: 33px; 
+        text-align: center;
+        // font-size: clamp(1.3rem, 1vw, 2rem);
+        @include breakPoint.between(300px,700px){
+            font-size: 1.3em;
+        }
     }
 
     }
