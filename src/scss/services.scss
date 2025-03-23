@@ -1,13 +1,15 @@
+@use'./breakPoint.scss';
 .services-main{
     background: #FCFAEE;
     .services-first {
             width: 100%;
-            min-height: 40vh;
+            min-height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 3vh;
+           padding:  clamp(10px, 5vw, 50px) clamp(5px, 5vw, 130px);
     
             .main-header {
                 color: #2C3333;
@@ -25,6 +27,7 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+                text-align: center;
             }
     
             .main-para {
@@ -39,6 +42,7 @@
     }
 
     .service-second{
+        padding:0px clamp(5px, 5vw, 130px);
         .service-ul{
             color: #2C3333;
 font-family: Montserrat;
@@ -63,10 +67,20 @@ line-height: 30px; /* 150% */
     }
 
     .service-third{
-        display: flex;
+            display: flex;
             flex-direction: row;
             align-items: center;
+            padding: clamp(10px, 5vw, 50px) clamp(5px, 5vw, 130px);
+            @include breakPoint.between(300px,1000px){
+                flex-direction: column-reverse;
+            }
             .third-container{
+                gap: 2vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 5% 0;
                .third-title{
                 
                  color: #2C3333;
@@ -91,6 +105,7 @@ line-height: 30px; /* 150% */
             }
     }
     .service-forth{
+        padding: clamp(10px, 5vw, 50px) clamp(5px, 5vw, 130px);
         .service-ul{
             color: #2C3333;
 font-family: Montserrat;

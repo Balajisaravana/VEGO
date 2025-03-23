@@ -23,6 +23,7 @@
     // max-width: 80%;
     justify-content: center;
     align-items: flex-start;
+    padding: 5% 0;
     @include breakPoint.respond('xs'){
         max-width: 100%;
 
@@ -30,6 +31,10 @@
         gap: 20px;
         align-items: normal;
         }
+    }
+    .right-content{
+        min-width: 300px;
+        min-height: 300px;
     }
     // @include breakPoint.respond('xs'){
     //     max-width: 100%;

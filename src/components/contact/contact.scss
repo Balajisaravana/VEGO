@@ -1,0 +1,127 @@
+@use'../../scss/breakPoint.scss';
+.contacts {
+  background: #FCFAEE;
+  padding: clamp(10px, 5vw,50px) clamp(5px, 5vw, 130px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 60vh;
+  .right {
+    padding: 50px;
+    border-radius: 15px;
+    background: #FCFAEE;
+    box-shadow: 0px 0px 20.6px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    min-width: 80%;
+    max-width: 100%;
+    width: auto;
+    min-height: 60vh;
+    @include breakPoint.between(300px,700px){
+    
+      flex-direction: column;
+  }
+  }
+  .subheader{
+    color: #2C3333;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+  }
+  .para {
+    color: #2C3333;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+  h1 {
+    color: #2C3333;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    text-align: left;
+  }
+
+  p {
+    color: #2C3333;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .items {
+    margin: 30px 0;
+  }
+
+  .box {
+    p {
+      font-size: 17px;
+      margin-top: 10px;
+    }
+  }
+
+  textarea,
+  input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid grey;
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: #272727;
+    font-weight: 600;
+    font-size: 15px;
+    word-spacing: 5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    iframe {
+      height: 50vh;
+    }
+
+    .row {
+      width: 100%;
+    }
+  }
+}
+
+.contact-submit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+form {
+  .flexSB {
+    input:nth-child(1) {
+      margin-right: 10px;
+    }
+  }
+}

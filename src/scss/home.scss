@@ -6,6 +6,7 @@
 @use'../scss//layout/weHelp';
 @use'../scss/layout/footer';
 @use'./breakPoint.scss';
+@use'./components/carosuel';
 .home-main{
    
     .home-services{
@@ -24,7 +25,7 @@
         @include breakPoint.between(300px,890px){
             min-height: 70vh;
             }
-        @include breakPoint.between(891px,1300px){
+        @include breakPoint.between(1080px,1300px){
             min-height: 160vh;
         }
         >h2{
@@ -48,7 +49,7 @@
 
     .home-help{
         width: 100%;
-        min-height:100vh;
+        min-height:110vh;
         opacity: 1.15;
         background: url('../assets/home-spider.svg') #FCFAEE 50% / cover no-repeat;
         padding: 70px 0px;
@@ -56,7 +57,7 @@
 
     .home-promises{
         width: 100%;
-        min-height: 100vh;
+        min-height: 70vh;
         background: linear-gradient(96deg, #2C3333 28.49%, #778989 128.93%);
         display: flex;
         flex-direction: column;
@@ -66,6 +67,15 @@
             @include mixin.headerText(3.5rem);
             width: 100%;
             text-align: center;
+            @include breakPoint.between(700px,1200px){
+                font-size: 3rem;
+            }
+            @include breakPoint.between(450px,700px){
+                font-size: 2.4rem;
+            }
+            @include breakPoint.between(300px,450px){
+                font-size: 1.5rem;
+            }
         }
         ul {
                 display: flex;
@@ -75,6 +85,9 @@
                 align-items: center;
                 list-style: none;
                 // width: auto;
+                @include breakPoint.between(300px,700px){
+                    width: 100%;
+                }
                
             
             li{
@@ -82,13 +95,22 @@
                 // column-gap: 20px;
                 align-items: baseline;
                 justify-content: center;
+                @include breakPoint.between(300px,700px){
+                    align-items: center;
+                }
 
                 span{
                 @include mixin.innerText(1.5rem);
                 width: 80%;
                 text-align: left;
-                
+                @include breakPoint.between(700px,1200px){
+                    font-size: 1.3rem;
                 }
+                @include breakPoint.between(300px,700px){
+                    @include mixin.innerText(1rem);
+                }
+                }
+
              img {
                 margin-right: 30px;
              }  
@@ -98,11 +120,17 @@
             color: #CBE4DE;
             text-align: center;
             font-family: Montserrat;
-            font-size: 20px;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
-            width: 60%;
+            width: 80%;
+            @include breakPoint.between(700px,1300px){
+                font-size: 1.2rem;
+            }
+            @include breakPoint.between(300px,700px){
+                font-size: 1rem;
+            }
         }
 
     }
@@ -115,6 +143,11 @@ font-size: 52px;
 font-style: normal;
 font-weight: 900;
 line-height: normal;
+h2{
+    font-size: 52px;
+
+    font-weight: 900;
+}
 
 p{
     color: #2C3333;

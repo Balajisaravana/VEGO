@@ -1,4 +1,5 @@
 @use '../mixin.scss';
+@use'../breakPoint.scss';
 
 @mixin nav-container(){
     display: grid;
@@ -7,21 +8,34 @@
     // padding: 25px 130px;
     padding: clamp(10px, 5vw,50px) clamp(5px, 5vw, 130px);
 }
+@mixin mini-container(){
+    display: grid;
+    align-items: center;
+    // padding: 25px 130px;
+    padding: clamp(10px, 5vw,50px) clamp(5px, 5vw, 130px);
+    grid-template-columns: 2fr 0fr;
+}
 .nav-container {
     &_home {
     @include nav-container();
     background: linear-gradient(105deg, #2C3333 34.2%, #2E3535 59.7%, #7E8E8E 113.42%);
+    &_mini{
+        @include mini-container();
+        background: linear-gradient(105deg, #2C3333 34.2%, #2E3535 59.7%, #7E8E8E 113.42%);
+    }
 }
 &_service {
     @include nav-container();
     background: #FCFAEE;
+    &_mini{
+        @include mini-container();
+        background: #FCFAEE;
+    }
 }
 
 }
 
 .nav-logo{
-    
- 
     
     &_home{
         color:#CBE4DE;
@@ -49,11 +63,29 @@
         justify-content: space-evenly;
         align-items: center;
         list-style-type: none;
+        @include breakPoint.between(300px,1080px){
+           display: none;
+        }
         li {
             a{
                 @include mixin.text-style(#CBE4DE);
                 text-decoration: none;
                 
+            }
+        }
+        &_mini{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+            flex-direction: column;
+            gap: 20px;
+            li {
+                a{
+                    @include mixin.text-style(#CBE4DE);
+                    text-decoration: none;
+                    
+                }
             }
         }
     }
@@ -62,6 +94,9 @@
         justify-content: space-evenly;
         align-items: center;
         list-style-type: none;
+        @include breakPoint.between(300px,1080px){
+            display: none;
+         }
        
         li {
             a{
@@ -70,6 +105,35 @@
                 
             }
         }
+        &_mini{
+            display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        flex-direction: column;
+        gap: 20px;
+       
+        li {
+            a{
+                @include mixin.text-style(#2C3333);
+                text-decoration: none;
+                
+            }
+        }
+        }
     }
 }
-
+.p-sidebar{
+    padding: 10px 40px;
+    
+    // background: linear-gradient(105deg, #2C3333 34.2%, #2E3535 59.7%, #7E8E8E 113.42%);
+    height: 350px;
+    overflow: hidden;
+    gap: 20px;
+}
+._home{
+    background: linear-gradient(105deg, #2C3333 34.2%, #2E3535 59.7%, #7E8E8E 113.42%);
+}
+._service{
+    background: #FCFAEE;
+}

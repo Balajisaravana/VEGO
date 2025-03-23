@@ -2,7 +2,7 @@ import Footer from "@/components/layouts/Footer"
 import Button from "@/components/UI/Button"
 import NavBar from "@/components/UI/NavBar"
 import RightBanner from "@/components/UI/RightBanner"
-import { service_First  as  data_FB , service_Sec as data_SB } from "@/mock/service_content"
+import { service_First  as  data_FB , service_Sec as data_SB, service_Third as data_TB } from "@/mock/service_content"
 
 
 const Services = () => {
@@ -40,13 +40,13 @@ const Services = () => {
                    
         </section>
         <section className="service-forth">
-        <RightBanner HeaderText={data_FB.title}  isButton={true} imageRight={data_FB.imageLink} altText={data_FB.altText} className='side'>
+        <RightBanner HeaderText={data_TB.title}  isButton={true} imageRight={data_TB.imageLink} altText={data_TB.altText} className='side'>
                 <ul className="service-ul">
-                    <span className="service-subtitle">{data_FB.subtitle}</span>
+                    <span className="service-subtitle">{data_TB.subtitle}</span>
                     {
-                        data_FB.list.map((item)=> <li className="service-list"> {item.value}</li> )
+                        data_TB.list.map((item)=> <li className="service-list"> {item.value}</li> )
                     }
-                    <p className="service-span">{data_FB.para}</p>
+                    <p className="service-span">{data_TB.para}</p>
                 </ul>
             </RightBanner>
         </section>

@@ -40,21 +40,27 @@ export const servicesData = [{
 
 export const weHelpData = [
     {
+        id : 1,
         para : 'Build a strong brand presence with curated content and a distinct voice'
     },
     {
+        id : 2,
         para : 'We will do the market research to determine which offer will drive more sales'
     },
     {
+        id : 3,
         para : 'Turn followers into loyal customers with data-driven strategies that encourage action.'
     },
     {
+        id : 4,
         para : 'Attract high-quality leads with targeted advertising and retargeting strategies'
     },
     {
+        id : 5,
         para : 'We increase your sales by 10x with higher RO'
     },
     {
+        id : 6,
         para : 'We increase your sales by 10x with higher RO'
     }
 

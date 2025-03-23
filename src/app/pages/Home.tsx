@@ -10,11 +10,14 @@ import Footer from "@/components/layouts/Footer";
 import { dotList } from "@/mock";
 
 
+
 const HomePage = () => {
+    
     return (
         <>
     <header>
     <NavBar className="_home"></NavBar>
+   
   
     </header>
     <main className="home-main">

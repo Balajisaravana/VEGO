@@ -6,6 +6,7 @@ import worldMobile from '../assets/phone-world.svg';
 import hero from '@/assets/home_banner.svg'
 import logo from '../assets/brand-logo.svg'
 import dot from '../assets/dot-logo.svg';
+import person from  '../assets/person-stand.svg';
 
 export const homeImages = {
     dataIcon,
@@ -14,7 +15,9 @@ export const homeImages = {
 }
 export const serviceImages = {
     instaPoster,
-    worldMobile
+    worldMobile,
+    person
+
 
 }
 export const  heroBanner = hero;

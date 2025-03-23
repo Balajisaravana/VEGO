@@ -1,25 +1,25 @@
 .footer-container{
     background: linear-gradient(96deg, #2C3333 26.8%, #849999 124.23%);
     width: 100%;
-    min-height: 40vh;
+    min-height: 60vh;
     display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        gap: 25px;
+        // gap: 25px;
 
-    span{
-        width: 618px;
-    }
+   
     .footer-side{
-        width: 618px;
+        // width: 618px;
         color: #CBE4DE;
 text-align: center;
 font-family: Montserrat;
-font-size: 24px;
+// font-size: 24px;
+font-size: clamp(1em, 2vw, 1.7em);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+width: clamp(300px, 50vw, 680px);
     }
     aside{
         display: contents;
@@ -28,17 +28,19 @@ line-height: normal;
         h3{
             color: #CBE4DE;
 font-family: Montserrat;
-font-size: 64px;
+// font-size: 64px;
 font-style: normal;
 font-weight: 900;
 line-height: normal;
+font-size: clamp(1rem, 5vw, 3.5rem);
         }
         span{
             width: 100%;
     text-align: center;
             color: #CBE4DE;
 font-family: Montserrat;
-font-size: 24px;
+// font-size: 24px;
+font-size: clamp(1em, 2vw, 1.7em);
 font-style: normal;
 font-weight: 400;
 line-height: normal;

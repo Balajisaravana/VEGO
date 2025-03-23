@@ -8,7 +8,7 @@ type RightBannerType = {
     imageRight ?: string,
     altText ?: string
     children : React.ReactNode,
-    className : string
+    className ?: string
 }
 
 const RightBanner : React.FC<RightBannerType> = ({children,HeaderText, isButton = false, imageRight, altText, className }) => {
