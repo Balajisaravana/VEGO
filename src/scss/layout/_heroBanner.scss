@@ -4,6 +4,7 @@
     position: relative;
     min-height: 100vh;
     overflow: visible;
+    padding:  clamp(10px, 5vw, 50px) clamp(5px, 5vw, 130px);
     @include breakPoint.between(300px,1080px){
     display: flex;
     flex-direction: column;

@@ -74,13 +74,30 @@ line-height: 30px; /* 150% */
             @include breakPoint.between(300px,1000px){
                 flex-direction: column-reverse;
             }
+            .left-img{
+                width: 50%;
+                min-width: 300px;
+                min-height: 300px;
+                @include breakPoint.between(300px,1000px){
+                      width: 100%;
+                }
+                >img{
+                    display: flex;
+                    justify-self: center;
+                }
+            }
+           
             .third-container{
+                width: 50%;
                 gap: 2vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
                 padding: 5% 0;
+                @include breakPoint.between(300px,1000px){
+                    width: 100%;
+                }
                .third-title{
                 
                  color: #2C3333;

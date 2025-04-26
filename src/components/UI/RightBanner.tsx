@@ -22,7 +22,7 @@ const RightBanner : React.FC<RightBannerType> = ({children,HeaderText, isButton 
                 {children}
             
            <>
-           {isButton && <Button> Let's Connect</Button>}
+           {isButton && <Button onClick={() => window.location.href = '/contact'}> Let's Connect</Button>}
            </> 
             </section>
             <figure className="right-content">

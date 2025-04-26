@@ -1,0 +1,174 @@
+@use'../breakPoint.scss';
+.multistep-form {
+    width: 100%;
+    max-width: 48rem; // 768px
+    padding: 0 1.25rem;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    
+    .intro-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 48rem;
+      text-align: center;
+      
+      h1 {
+        // font-size: 1.875rem; // 30px
+        // font-weight: 700;
+        // color:  #2C3333; // indigo-800
+        color: #2C3333;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 900;
+            line-height: normal;
+      }
+      
+      p {
+        margin-top: 0.75rem;
+        font-size: 1.125rem; // 18px
+        color: #737373; // neutral-500
+      }
+      
+      .start-button-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1.25rem;
+        
+        .start-button {
+          padding: 0.75rem 1rem;
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: white;
+          background-color: black;
+          border-radius: 0.375rem;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          
+          &:hover, &:focus {
+            background-color: #262626; // neutral-800
+          }
+          
+          &:focus-visible {
+            outline: 2px solid #d4d4d4; // neutral-300
+            outline-offset: 2px;
+          }
+        }
+        
+        .key-hint {
+          font-size: 0.875rem;
+          color: #737373; // neutral-500
+          
+          .key {
+            font-weight: 500;
+            color: #404040; // neutral-700
+          }
+        }
+      }
+    }
+    
+    .form-container {
+      form {
+        padding: 2.5rem;
+        @include breakPoint.between(300px,500px){
+          padding: 0;
+      }
+      }
+      
+      .action-buttons {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1.25rem;
+        
+        .next-button, .submit-button {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.5rem 1rem;
+          font-size: 1.25rem;
+          font-weight: 500;
+          color: white;
+          background-color: black;
+          border-radius: 0.375rem;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+          .next-OK{
+            color: white;
+          }
+          .submit-OK{
+            color: white;
+          }
+          
+          &:hover, &:focus {
+            background-color: #262626; // neutral-800
+          }
+          
+          &:focus-visible {
+            outline: 2px solid #d4d4d4; // neutral-300
+            outline-offset: 2px;
+          }
+        }
+        
+        .key-hint {
+          font-size: 0.875rem;
+          color: #737373; // neutral-500
+          
+          .key {
+            font-weight: 500;
+            color: #404040; // neutral-700
+          }
+        }
+      }
+      
+      .form-footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        padding: 1.25rem 2.5rem;
+        
+        .nav-button {
+          padding: 0.75rem;
+          color: white;
+          background-color: #171717; // neutral-900
+          border: none;
+          cursor: pointer;
+          
+          &.next {
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+            border-left: 1px solid #525252; // neutral-600
+          }
+          
+          &.prev {
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+          }
+          
+          &:disabled {
+            color: #737373; // neutral-500
+            cursor: not-allowed;
+          }
+        }
+      }
+      
+      .success-message, .error-message {
+        h3 {
+          padding: 1.25rem;
+          font-size: 1.125rem;
+          text-align: center;
+        }
+      }
+    }
+  }

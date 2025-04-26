@@ -16,7 +16,7 @@ const Services = () => {
             <h2 className="main-header">Services</h2>
             <p className="main-subheader">Stop wasting time and money on faulty and ineffective social media campaigns.</p>
             <p className="main-para">we take your brand to the next level, crafting unique experiences that connect, inspire, and drive results. Let’s make your brand unforgettable.</p>
-            <Button>Talk to us</Button>
+            <Button  onClick={() => window.location.href = '/contact'}>Talk to us</Button>
         </section>
         <section className='service-second'>
             <RightBanner HeaderText={data_FB.title}  isButton={false} imageRight={data_FB.imageLink} altText={data_FB.altText} className='side'>
@@ -31,7 +31,8 @@ const Services = () => {
             </RightBanner>
         </section>
         <section className="service-third">
-                 <img src={data_SB.imageLink}></img>
+            <figure className="left-img"><img src={data_SB.imageLink}></img> </figure>
+                 
                     <div className="third-container">
                             <h2 className="third-title">{data_SB.title}</h2>
                         <span className="third-span">{data_SB.subTitle}</span>

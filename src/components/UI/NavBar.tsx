@@ -75,7 +75,10 @@ interface HamburgerMenuProps {
           </li>
         ))}
         <li>
+          <Link to={"/contact"}>
           <Button>{buttonLabel}</Button>
+          </Link>
+          
         </li>
       </ul>
     );
