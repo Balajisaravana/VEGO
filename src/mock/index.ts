@@ -7,7 +7,6 @@ import hero from '@/assets/home_banner.svg'
 import logo from '../assets/brand-logo.svg'
 import dot from '../assets/dot-logo.svg';
 import person from  '../assets/person-stand.svg';
-import herotile from '../assets/hero-banner-1.jpg';
 import hero2 from '../assets/hero-banner-2.jpg';
 import bannercard from '../assets/service-image.jpg'
 
