@@ -5,14 +5,15 @@ import ImageBlock from "@/components/UI/ImageBlock";
 import NavBar from "@/components/UI/NavBar";
 import RightBanner from "@/components/UI/RightBanner";
 import { servicesData  } from "@/mock/home_content";
-import banner from '../../assets/home_banner.svg'
+import banner from '../../assets/home-test-1.jpg'
 import Footer from "@/components/layouts/Footer";
 import { dotList } from "@/mock";
+import { useNavigate } from "react-router-dom";
 
 
 
 const HomePage = () => {
-    
+    const navigate = useNavigate();
     return (
         <>
     <header>
@@ -43,7 +44,7 @@ const HomePage = () => {
             <li> <img src={dotList}/><span>If we fail to do , we will refund your money fully and work with you free for next 30 days to achieve your desired result. </span></li>
         </ul>
         <span>"Ready to explode your brand’s social media growth in 30 days?” Click below to book your free strategy session and reserve your spot in our limited Sales Accelerator program!</span>
-            <Button>Let's Work Together</Button>
+            <Button onClick={() => navigate('/contact')}>Let's Connect</Button>
     </section>
     <section className="home-transfrom">
         <RightBanner HeaderText="How It Transforms the Brand:" imageRight={banner}  altText="Banner Image" isButton={false}>

@@ -5,9 +5,11 @@ import { heroImg } from "@/mock";
 import { ourMission as data_SB, whyVogo as data_TB } from "@/mock/about_content";
 import RightBanner from "@/components/UI/RightBanner";
 import Footer from "@/components/layouts/Footer";
+import { useNavigate } from "react-router-dom";
 
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <>
     <header>
@@ -20,8 +22,8 @@ const About = () => {
         // backgroundImage="/images/hero-background.jpg"
         height="600px"
         ctaButton={{
-          text: "Get Started",
-          onClick:  () => window.location.href = '/contact'
+          text: "Let's Connect",
+          onClick:  () => navigate('/contact')
         }} backgroundImage={heroImg}/>
       </section>
         

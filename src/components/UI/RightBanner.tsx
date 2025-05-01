@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../UI/Button";
+import { useNavigate } from "react-router";
 
 type RightBannerType = {
     HeaderText : string,
@@ -12,6 +13,7 @@ type RightBannerType = {
 }
 
 const RightBanner : React.FC<RightBannerType> = ({children,HeaderText, isButton = false, imageRight, altText, className }) => {
+     const navigate = useNavigate();
     return (
         <div className="rb-container">
             <section className="left-content">
@@ -22,7 +24,7 @@ const RightBanner : React.FC<RightBannerType> = ({children,HeaderText, isButton 
                 {children}
             
            <>
-           {isButton && <Button onClick={() => window.location.href = '/contact'}> Let's Connect</Button>}
+           {isButton && <Button onClick={() => navigate('/contact')}> Let's Connect</Button>}
            </> 
             </section>
             <figure className="right-content">

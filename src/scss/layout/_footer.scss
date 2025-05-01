@@ -1,3 +1,4 @@
+@use'../breakPoint.scss';
 .footer-container{
     background: linear-gradient(96deg, #2C3333 26.8%, #849999 124.23%);
     width: 100%;
@@ -8,14 +9,16 @@
         align-items: center;
         // gap: 25px;
 
-   
+        @include breakPoint.between(300px,500px){
+            min-height: 70vh;
+            }
     .footer-side{
         // width: 618px;
         color: #CBE4DE;
 text-align: center;
 font-family: Montserrat;
 // font-size: 24px;
-font-size: clamp(1em, 2vw, 1.7em);
+font-size: clamp(1.5em, 2vw, 1.7em);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -32,7 +35,7 @@ font-family: Montserrat;
 font-style: normal;
 font-weight: 900;
 line-height: normal;
-font-size: clamp(1rem, 5vw, 3.5rem);
+font-size: clamp(1.7rem, 5vw, 3.5rem);
         }
         span{
             width: 100%;
@@ -40,7 +43,7 @@ font-size: clamp(1rem, 5vw, 3.5rem);
             color: #CBE4DE;
 font-family: Montserrat;
 // font-size: 24px;
-font-size: clamp(1em, 2vw, 1.7em);
+font-size: clamp(1.5em, 2vw, 1.7em);
 font-style: normal;
 font-weight: 400;
 line-height: normal;

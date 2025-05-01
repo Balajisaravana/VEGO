@@ -7,7 +7,7 @@ import { BrandLogo } from "@/mock/index"
 
             <aside>
             <h3>Have A General Inquiry?</h3>
-            <span>If you have a general inquiry and FAQ, you can contact us via email at: ragav@vogadynamics.com</span>
+            <span>If you have a general inquiry and FAQ, you can contact us via email at: vogadynamics@gmail.com</span>
             </aside>
            
             
